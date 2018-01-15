@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.parul.booksempire.view_book">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_default">
+
+            <TextView
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Book Name"
+                android:textSize="@dimen/text_default_size" />
+
+            <TextView
+                android:id="@+id/book_name_textView"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_default">
+
+            <TextView
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Product Price"
+                android:textSize="@dimen/text_default_size" />
+
+            <TextView
+                android:id="@+id/book_price_textView"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_default"
+            android:text="Quantity of Books"
+            android:textSize="@dimen/text_default_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_default">
+
+            <Button
+                android:id="@+id/minus_button"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="decrementQuantity"
+                android:text="-"
+                android:textSize="@dimen/heading_size"></Button>
+
+            <TextView
+                android:id="@+id/books_quantity"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_default"
+                android:layout_marginRight="@dimen/padding_default"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="@dimen/heading_size" />
+
+            <Button
+                android:id="@+id/plus_button"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="incrementQuantity"
+                android:text="+"
+                android:textSize="@dimen/heading_size"></Button>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_default">
+
+            <TextView
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Supplier's Name"
+                android:textSize="@dimen/text_default_size" />
+
+            <TextView
+                android:id="@+id/supplier_name_textView"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_default">
+
+            <TextView
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Supplier's Email"
+                android:textSize="@dimen/text_default_size" />
+
+            <TextView
+                android:id="@+id/supplier_email_textView"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_default">
+
+            <TextView
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Supplier's Phone"
+                android:textSize="@dimen/text_default_size" />
+
+            <TextView
+                android:id="@+id/supplier_phone_textView"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_default">
+
+            <Button
+                android:id="@+id/editBook_button"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/padding_default"
+                android:layout_weight="1"
+                android:text="Edit This Book" />
+
+            <Button
+                android:id="@+id/deleteBook_button"
+                android:layout_width="@dimen/width_zero"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/padding_default"
+                android:layout_weight="1"
+                android:text="Delete This Book" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/viewBook_order_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Order Now" />
+
+    </LinearLayout>
+
+
+</ScrollView>

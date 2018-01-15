@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".add_book">
+
+    <item
+        android:id="@+id/menu_insert_data"
+        android:icon="@mipmap/tick_image"
+        android:title="@string/menu_insert_dummy_data"
+        app:showAsAction="always" />
+
+</menu>

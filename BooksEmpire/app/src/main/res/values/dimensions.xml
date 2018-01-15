@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="image_dimen">250dp</dimen>
+    <dimen name="empty_first_title">20sp</dimen>
+    <dimen name="empty_second_title">15sp</dimen>
+    <dimen name="padding_default">15dp</dimen>
+    <dimen name="floating_button_margin">12dp</dimen>
+    <dimen name="width_zero">0dp</dimen>
+    <dimen name="book_size">30sp</dimen>
+    <dimen name="text_default_size">25sp</dimen>
+    <dimen name="heading_size">28sp</dimen>
+    <dimen name="sale_button_size">20sp</dimen>
+
+</resources>

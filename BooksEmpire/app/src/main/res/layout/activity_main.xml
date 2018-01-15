@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.parul.booksempire.MainActivity">
+
+    <ListView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.parul.booksempire.MainActivity"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/no_books_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/empty_basket_image"
+            android:layout_width="@dimen/image_dimen"
+            android:layout_height="@dimen/image_dimen"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/empty_basket" />
+
+        <TextView
+            android:id="@+id/empty_first_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_basket_image"
+            android:layout_centerHorizontal="true"
+            android:text="@string/empty_first_title_text"
+            android:textColor="#000000"
+            android:textSize="@dimen/empty_first_title" />
+
+        <TextView
+            android:id="@+id/empty_second_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empty_first_title_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/empty_second_title_text"
+            android:textColor="#000000"
+            android:textSize="@dimen/empty_second_title" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/floating_button_margin"
+        android:src="@mipmap/floating_button"
+        app:fabSize="normal"
+
+        />
+
+
+</RelativeLayout>

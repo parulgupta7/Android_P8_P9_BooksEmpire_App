@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Books Empire</string>
+
+    <string name="empty_first_title_text">Do not let yourself free!</string>
+    <string name="empty_second_title_text">let us add some books here...</string>
+
+    <string name="validate_negative_sale">The Number of Books cannot be negative</string>
+    <string name="add_this_product">Add This Product</string>
+    <string name="edit_this_product">Edit This Product</string>
+    <string name="view_this_product">Book\'s Complete Information</string>
+    <string name="delete_warning">Sure, delete this Book ?</string>
+    <string name="delete_book">Delete Book</string>
+    <string name="dont_delete_book">Do not Delete Book</string>
+    <string name="quit_editing">Discard your changes and quit editing?</string>
+    <string name="discard_changes">Discard Changes</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="keep_adding">Keep Adding</string>
+    <string name="menu_insert_dummy_data">Insert Dummy Book Data</string>
+    <string name="unsuccessful_insertion">Book Cannot be Inserted</string>
+    <string name="successfull_insertion">Book Inserted Succesfully with URI :</string>
+    <string name="unsuccessful_updatation">Book cannot be updated</string>
+    <string name="successful_updation">Book Updated Successfully</string>
+    <string name="check_error">Enter Correct Values</string>
+    <string name="unsuccessful_deletion">Book cannot be Deleted</string>
+    <string name="successful_deletion">Books Deleted Successfully</string>
+    <string name="unsuccessful_email_send">No Books clients to send Email</string>
+    <string name="unsuccessful_quantity_decrement">Book Quantity cannot be Decremented</string>
+    <string name="successful_quantity_decrement">Book quantity Decremented Successfully</string>
+    <string name="unsuccessful_quantity_increment">Book Quantity cannot be Incremented</string>
+    <string name="successful_quantity_increment">Book Quantity Incremented Successfully</string>
+
+
+</resources>

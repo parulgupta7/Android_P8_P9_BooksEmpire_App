@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/books_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="@dimen/width_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textColor="#000000"
+            android:textSize="@dimen/book_size"
+            tools:text="Product Name" />
+
+        <TextView
+            android:id="@+id/book_quantity"
+            android:layout_width="@dimen/width_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#cc2900"
+            android:textSize="@dimen/text_default_size"
+            tools:text="Books Quantity" />
+
+        <TextView
+            android:id="@+id/book_price"
+            android:layout_width="@dimen/width_zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#444422"
+            android:textSize="@dimen/text_default_size"
+            tools:text="0.0 $" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/books_layout"
+        android:layout_centerInParent="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Sale"
+        android:textAllCaps="true"
+        android:textSize="@dimen/sale_button_size" />
+</RelativeLayout>
